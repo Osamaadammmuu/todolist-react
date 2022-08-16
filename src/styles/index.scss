@@ -1,0 +1,106 @@
+@import './helpsLinks.scss';
+.main {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  height: 800px;
+  .header {
+    h1 {
+      font-family: 'Barlow', sans-serif;
+      color: #004799;
+      padding: 8px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .form {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 34px;
+    .input {
+      position: relative;
+      input {
+        width: 250px;
+        border: none;
+        padding: 10px 20px;
+        outline: none;
+        border-radius: 7px;
+        height: 20px;
+        font-size: 18px;
+      }
+      button {
+        position: absolute;
+        right: 0;
+        border: none;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-color: #004799;
+        color: #fff;
+        border-radius: 0 7px 7px 0;
+        opacity: .9;
+        &:hover {
+          opacity: 1;
+        }
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+    .select {
+      margin-left: 20px;
+      select {
+        border: none;
+        height: 40px;
+        padding: 10px 20px;
+        outline: none;
+        border-radius: 7px;
+        
+      }
+    }
+    
+  }
+  .todo-con {
+    .todo-list {
+      list-style: none;
+      .todo {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 400px;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 10px;
+        .marks {
+          button {
+            border: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            &:first-of-type {
+              margin-right: 10px;
+              background-color: aquamarine;
+              cursor: pointer;
+            }
+            &:nth-of-type(2) {
+              background-color: rgb(180, 21, 21);
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+
+}
+// from react css
+.todo-item.completed {
+  color: rgb(125, 125, 125);
+  text-decoration: line-through;
+}
